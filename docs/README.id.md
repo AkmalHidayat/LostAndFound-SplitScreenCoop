@@ -4,6 +4,11 @@
 
 Mod co-op split-screen lokal berbasis BepInEx 5 untuk game **Lost and Found Co.** (Windows x64) yang mendukung 2 hingga 4 pemain dalam satu layar, lengkap dengan kamera independen, kursor virtual, isolasi input perangkat, layar penuh otomatis saat cutscene, dan antarmuka mod multi-bahasa.
 
+> **Versi Game yang Diuji**: **Lost and Found Co. v1.2.2** (Steam, Windows x64). Pembaruan patch minor umumnya tetap kompatibel selama struktur internal kamera, input, dan pencahayaan game tidak berubah.
+
+> [!TIP]
+> **Ingin bermain dalam Bahasa Indonesia?** Pasang bersama **[Mod Bahasa Indonesia Lost and Found Co.](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** (`LostAndFound_Indonesian.dll`). Kedua mod dirancang 100% kompatibel berjalan berdampingan tanpa konflik tombol, dan antarmuka mod Split-Screen ini akan otomatis tampil dalam Bahasa Indonesia saat mod tersebut aktif.
+
 ## Fitur Utama
 
 - **2 hingga 4 Pemain Lokal**:
@@ -23,11 +28,12 @@ Mod co-op split-screen lokal berbasis BepInEx 5 untuk game **Lost and Found Co.*
   - Otomatis mengikuti bahasa aktif game (`en`, `th`, `zh-CN`, `zh-TW`, `ja`, `ko`, `de`), **Bahasa Indonesia (`id`)** jika Mod Bahasa Indonesia terpasang, serta cadangan untuk 8 slot I2 tambahan (`fr`, `es-ES`, `it`, `ru`, `sv-SE`, `tr`, `pt-BR`, `vi`).
   - Memilih font sistem Windows secara dinamis agar aksara Thailand, Tionghoa, Jepang, Korea, Cyrillic, dan Vietnam tampil rapi tanpa kotak kosong.
 
-## Kompatibilitas dengan Mod Bahasa Indonesia
+## Mod Lain dari Kami & Kompatibilitas
 
-Mod ini dirancang untuk berjalan berdampingan dengan **[Mod Bahasa Indonesia Lost and Found Co.](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** (`LostAndFound_Indonesian.dll`, GUID `com.teteh.lostandfoundco.indonesian`):
+Kami juga membuat mod lokalisasi pendamping untuk game ini: **[Lost and Found Co. - Mod Bahasa Indonesia](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** (`LostAndFound_Indonesian.dll`, GUID `com.teteh.lostandfoundco.indonesian`):
 
-- **UI Otomatis Berbahasa Indonesia**: Saat Mod Bahasa Indonesia aktif di dalam game, panel kontrol `F10`, label sudut pemain, kartu tunggu P4, dan toast notifikasi otomatis tampil dalam Bahasa Indonesia dengan istilah yang konsisten (seperti `Daftar Tugas` untuk To-Do List).
+- **Terjemahan Bahasa Indonesia Lengkap (Ter-update hingga Patch 1.2.2)**: Mengaktifkan Slot 14 I2 Localization (`Bahasa Indonesia`) saat runtime dengan **16.718 entri** tanpa menyentuh file asli game. *(Catatan: apabila update game mendatang menambahkan level atau konten baru setelah Patch 1.2.2, teks baru tersebut belum otomatis ter-cover sampai kamus diperbarui.)*
+- **UI Co-op Otomatis Berbahasa Indonesia**: Saat Mod Bahasa Indonesia aktif di dalam game, panel kontrol `F10`, label sudut pemain, kartu tunggu P4, dan toast notifikasi otomatis tampil dalam Bahasa Indonesia dengan istilah yang konsisten (seperti `Daftar Tugas` untuk To-Do List).
 - **Bebas Konflik Tombol Pintas**: Pergantian tata letak 2 pemain hanya memakai `F11`, sehingga tombol `F9` tetap sepenuhnya bebas untuk fitur hot-reload kamus milik Mod Bahasa Indonesia.
 - **Installer Aman Berdampingan**: Kedua mod memakai BepInEx 5 tanpa saling mengganggu. Skrip `Install_SplitScreenCoop.bat` maupun `Uninstall_SplitScreenCoop.bat` tidak pernah menimpa atau menghapus `LostAndFound_Indonesian.dll`, `runtime_id.json`, maupun file loader proxy yang sudah terpasang.
 

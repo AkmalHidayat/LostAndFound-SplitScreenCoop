@@ -1,6 +1,8 @@
 ========================================================================
   LOST AND FOUND CO. - SPLIT-SCREEN CO-OP MOD - QUICK INSTALL GUIDE
 ========================================================================
+Tested Game Version : Lost and Found Co. v1.2.2 (Steam, Windows x64)
+Mod Loader          : BepInEx 5.4.23.5 (x64)
 
 1. INSTALLATION (AUTO-INSTALLER)
 ------------------------------------------------------------------------

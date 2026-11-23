@@ -4,6 +4,8 @@
 
 **Lost and Found Co.**（Windows x64）向けの BepInEx 5 製ローカル画面分割協力 MOD です。最大 4 人まで 1 画面で同時プレイでき、プレイヤーごとの独立カメラ・仮想カーソル・入力デバイス分離・カットシーン時の自動フルスクリーン切替・多言語 UI に対応しています。
 
+> **動作確認済みゲームバージョン**: **Lost and Found Co. v1.2.2**（Steam / Windows x64）。カメラ・入力・ライティング関連の内部クラスに変更がない限り、通常はマイナーアップデート後もそのまま動作します。
+
 ## 主な機能
 
 - **2〜4 人のローカル画面分割**:
@@ -22,9 +24,9 @@
 - **自動多言語 UI**:
   - ゲーム内の言語設定（`en`, `th`, `zh-CN`, `zh-TW`, `ja`, `ko`, `de`、およびインドネシア語 MOD 導入時の `id`、さらに予約スロット `fr`, `es-ES`, `it`, `ru`, `sv-SE`, `tr`, `pt-BR`, `vi`）に自動追従し、言語に応じた Windows システムフォント（Yu Gothic UI / Meiryo / CJK / Thai フォント等）を適用します。
 
-## インドネシア語ローカライズ MOD との互換性
+## 制作した関連 MOD と互換性
 
-**[Lost and Found Co. インドネシア語ローカライズ MOD](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)**（`LostAndFound_Indonesian.dll` / `com.teteh.lostandfoundco.indonesian`）と同時に導入しても競合しないよう設計されています:
+当方制作の関連 MOD **[Lost and Found Co. インドネシア語ローカライズ MOD](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)**（`LostAndFound_Indonesian.dll` / `com.teteh.lostandfoundco.indonesian`、全 16,718 項目を **Patch 1.2.2** まで翻訳対応済み。Patch 1.2.2 以降で追加される新ステージは辞書更新まで未対応）と同時に導入しても競合しないよう設計されています:
 
 - ゲーム言語がインドネシア語に切り替わると、MOD の制御パネル（`F10`）、コーナーバッジ、待機表示、トースト通知も自動でインドネシア語に切り替わります。
 - 2P レイアウト切替キーは `F11` のみに割り当てられており、辞書リロード用の `F9` と衝突しません。

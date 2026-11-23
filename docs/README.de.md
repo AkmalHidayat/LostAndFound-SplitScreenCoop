@@ -4,6 +4,8 @@
 
 Eine lokale Splitscreen-Koop-Mod auf Basis von BepInEx 5 fuer **Lost and Found Co.** (Windows x64) mit Unterstuetzung fuer 2 bis 4 Spieler, getrennten Kameras, eigenen Mauszeigern, Eingabe-Isolation, automatischem Vollbild bei Zwischensequenzen und mehrsprachiger Mod-Oberflaeche.
 
+> **Getestete Spielversion**: **Lost and Found Co. v1.2.2** (Steam, Windows x64). Kleinere Spiel-Updates bleiben in der Regel kompatibel, solange sich interne Kamera-, Eingabe- oder Beleuchtungsklassen nicht aendern.
+
 ## Funktionen
 
 - **2 bis 4 lokale Spieler**:
@@ -22,9 +24,9 @@ Eine lokale Splitscreen-Koop-Mod auf Basis von BepInEx 5 fuer **Lost and Found C
 - **Mehrsprachige Mod-UI**:
   - Folgt automatisch der Spielsprache (`en`, `th`, `zh-CN`, `zh-TW`, `ja`, `ko`, `de`), unterstuetzt **Bahasa Indonesia (`id`)** bei installierter indonesischer Sprachmod sowie die uebrigen I2-Sprachslots (`fr`, `es-ES`, `it`, `ru`, `sv-SE`, `tr`, `pt-BR`, `vi`).
 
-## Kompatibilitaet mit der Indonesian Localization Mod
+## Weitere Mods von uns & Kompatibilitaet
 
-Diese Mod arbeitet konfliktfrei mit **[Lost and Found Co. Indonesian Localization Mod](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** (`LostAndFound_Indonesian.dll`, GUID `com.teteh.lostandfoundco.indonesian`) zusammen:
+Unsere Begleitmod **[Lost and Found Co. Indonesian Localization Mod](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** (`LostAndFound_Indonesian.dll`, GUID `com.teteh.lostandfoundco.indonesian`) fuegt vollstaendige Bahasa-Indonesia-Uebersetzungen (16.718 Eintraege, aktualisiert bis **Patch 1.2.2**; neuere Level nach 1.2.2 erfordern ein Woerterbuch-Update) hinzu und arbeitet konfliktfrei zusammen:
 
 - Ist Bahasa Indonesia im Spiel aktiv, wechseln Panel (`F10`), Ecken-Badges, Wartekarte und Benachrichtigungen automatisch auf Bahasa Indonesia.
 - Das 2P-Layout liegt ausschliesslich auf `F11`, sodass `F9` fuer das Hot-Reloading der Uebersetzungsmod frei bleibt.

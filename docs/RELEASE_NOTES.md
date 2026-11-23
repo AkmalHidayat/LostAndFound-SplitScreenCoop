@@ -1,5 +1,7 @@
 # Lost and Found Co. Split-Screen Co-op Mod v1.0.4
 
+**Tested Game Version**: Lost and Found Co. v1.2.2 (Steam, Windows x64) | **Mod Loader**: BepInEx 5.4.23.5 (x64)
+
 ## Highlights in v1.0.4
 
 - **Automatic Multi-Language In-Game UI**: Control panel (`F10`), player corner badges, P4 standby tile, and toast alerts now follow the game's active language setting (`English`, `Thai`, `Simplified Chinese`, `Traditional Chinese`, `Japanese`, `Korean`, `German`, plus `Bahasa Indonesia` when the Indonesian Localization Mod is installed, and fallback tables for community I2 slots `fr`, `es-ES`, `it`, `ru`, `sv-SE`, `tr`, `pt-BR`, `vi`).

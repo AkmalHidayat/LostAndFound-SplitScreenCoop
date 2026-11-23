@@ -4,6 +4,8 @@
 
 基于 BepInEx 5 的 **《Lost and Found Co.》（失物招领有限公司）** Windows x64 本地分屏合作模组，支持 2 至 4 名玩家同屏游玩，具备独立视角与缩放、独立虚拟光标、设备输入隔离、过场自动全屏切换及多语言模组界面。
 
+> **已测试游戏版本**: **Lost and Found Co. v1.2.2**（Steam，Windows x64）。只要游戏内部的相机、输入与光照类未发生破坏性改动，后续小版本更新通常均可兼容。
+
 ## 主要功能
 
 - **支持 2 至 4 人本地分屏**:
@@ -22,9 +24,9 @@
 - **界面自动多语言**:
   - 随游戏语言设置自动切换（支持 `en`、`th`、`zh-CN`、`zh-TW`、`ja`、`ko`、`de`，并在安装印尼语本地化模组时支持 `id`，同时预置了 `fr`、`es-ES`、`it`、`ru`、`sv-SE`、`tr`、`pt-BR`、`vi` 词条），并自动调用对应语言的 Windows 系统字体（如微软雅黑、正黑体、Yu Gothic、Leelawadee UI 等）。
 
-## 与印尼语本地化模组兼容性说明
+## 我们的其他模组与兼容性说明
 
-本模组可与 **[Lost and Found Co. 印尼语本地化模组](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)**（`LostAndFound_Indonesian.dll` / `com.teteh.lostandfoundco.indonesian`）安全共存：
+我们还开发了配套的 **[Lost and Found Co. 印尼语本地化模组](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)**（`LostAndFound_Indonesian.dll` / `com.teteh.lostandfoundco.indonesian`，已将 16,718 条文本翻译更新至 **Patch 1.2.2**；后续新版本若新增关卡需等待词典更新），与本模组可安全共存：
 
 - 当游戏语言设为印度尼西亚语时，分屏控制面板 `F10`、角落角标、P4 等待栏及提示条会自动切换为一致的印尼语界面文本。
 - 分屏布局快捷键仅绑定至 `F11`，保留 `F9` 给印尼语模组用于词典热重载，互不冲突。
