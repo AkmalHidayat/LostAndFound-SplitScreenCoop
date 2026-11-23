@@ -31,6 +31,4 @@ The pre-packaged **Auto-Install Release ZIP** (`LostAndFound-SplitScreenCoop-v*-
 - **License**: GNU Lesser General Public License v2.1 (LGPL-2.1)
 - **Bundled files in release archive**:
   - `loaders/winhttp.dll`
-  - `loaders/version.dll`
-  - `loaders/winmm.dll`
   - `doorstop_config.ini`

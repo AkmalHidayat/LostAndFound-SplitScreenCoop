@@ -76,12 +76,8 @@ function Resolve-GameDirectory {
 function Find-BepInExCoreDir {
     param([string]$ResolvedGameDir)
     $primary = Join-Path $ResolvedGameDir "BepInEx\core"
-    $secondary = Join-Path $ResolvedGameDir "LostAndFoundCo_Mod_ID\BepInEx\core"
     if ((Test-Path (Join-Path $primary "BepInEx.dll")) -and (Test-Path (Join-Path $primary "0Harmony.dll"))) {
         return $primary
-    }
-    if ((Test-Path (Join-Path $secondary "BepInEx.dll")) -and (Test-Path (Join-Path $secondary "0Harmony.dll"))) {
-        return $secondary
     }
     return $null
 }

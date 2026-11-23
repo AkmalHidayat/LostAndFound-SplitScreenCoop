@@ -24,7 +24,7 @@
 
 ## 与印尼语本地化模组兼容性说明
 
-本模组可与 `LostAndFound_Indonesian.dll`（`com.teteh.lostandfoundco.indonesian`）安全共存：
+本模组可与 **[Lost and Found Co. 印尼语本地化模组](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)**（`LostAndFound_Indonesian.dll` / `com.teteh.lostandfoundco.indonesian`）安全共存：
 
 - 当游戏语言设为印度尼西亚语时，分屏控制面板 `F10`、角落角标、P4 等待栏及提示条会自动切换为一致的印尼语界面文本。
 - 分屏布局快捷键仅绑定至 `F11`，保留 `F9` 给印尼语模组用于词典热重载，互不冲突。
@@ -40,7 +40,7 @@
 2. 将压缩包内所有文件解压到游戏根目录（与 `Lost and Found Co.exe` 同级）。
    - Steam 默认路径示例: `C:\Program Files (x86)\Steam\steamapps\common\Lost and Found Co`
 3. 双击运行 **`Install_SplitScreenCoop.bat`**（安装脚本界面为英文）。
-   - 若尚未安装 BepInEx 5，脚本会自动选择空闲的代理入口（`winhttp.dll`、`version.dll` 或 `winmm.dll`）并完成安装，绝不覆盖现有文件。
+   - 若尚未安装 BepInEx 5，脚本会使用空闲的 Unity Doorstop 代理（`winhttp.dll`）完成安装，绝不覆盖现有文件。
    - 若已安装 BepInEx 5 或其他模组，脚本将保留原有加载器，仅放入 `BepInEx\plugins\LostAndFound_SplitScreenCoop.dll`。
 4. 通过 Steam 正常启动游戏。
 

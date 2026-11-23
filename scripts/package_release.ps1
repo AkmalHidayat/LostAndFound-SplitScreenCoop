@@ -44,7 +44,7 @@ $bepCoreWhitelist = @(
     "MonoMod.RuntimeDetour.dll",
     "MonoMod.Utils.dll"
 )
-$loaderWhitelist = @("winhttp.dll", "version.dll", "winmm.dll")
+$loaderWhitelist = @("winhttp.dll")
 
 $parentGameDir = Split-Path -Parent $repoRoot
 $sourceCandidates = New-Object System.Collections.Generic.List[string]
@@ -52,14 +52,17 @@ if (-not [string]::IsNullOrWhiteSpace($BepInExSourceDir)) {
     $sourceCandidates.Add($BepInExSourceDir) | Out-Null
 }
 if (-not [string]::IsNullOrWhiteSpace($GameDir)) {
-    $sourceCandidates.Add((Join-Path $GameDir "LostAndFoundCo_Mod_ID")) | Out-Null
     $sourceCandidates.Add($GameDir) | Out-Null
 }
-$sourceCandidates.Add((Join-Path $parentGameDir "LostAndFoundCo_Mod_ID")) | Out-Null
 $sourceCandidates.Add($parentGameDir) | Out-Null
+$indonesianInstallerPkg = Join-Path $parentGameDir "IndonesianLocalizationMod\obj\release_staging_auto\IndonesianMod_Installer"
+if (Test-Path $indonesianInstallerPkg) {
+    $sourceCandidates.Add($indonesianInstallerPkg) | Out-Null
+}
 
 $resolvedCoreDir = $null
 $resolvedLoadersDir = $null
+$resolvedWinhttp = $null
 $resolvedDoorstopIni = $null
 
 foreach ($cand in $sourceCandidates) {
@@ -79,16 +82,11 @@ foreach ($cand in $sourceCandidates) {
         $resolvedCoreDir = $coreTry
     }
 
-    $loadersTry = Join-Path $cand "loaders"
-    $hasLoadersSubdir = $true
-    foreach ($ldr in $loaderWhitelist) {
-        if (-not (Test-Path (Join-Path $loadersTry $ldr))) {
-            $hasLoadersSubdir = $false
-            break
+    foreach ($winhttpCandidate in @((Join-Path $cand "loaders\winhttp.dll"), (Join-Path $cand "winhttp.dll"))) {
+        if ((Test-Path $winhttpCandidate) -and ($null -eq $resolvedWinhttp)) {
+            $resolvedWinhttp = $winhttpCandidate
+            $resolvedLoadersDir = Split-Path -Parent $winhttpCandidate
         }
-    }
-    if ($hasLoadersSubdir -and ($null -eq $resolvedLoadersDir)) {
-        $resolvedLoadersDir = $loadersTry
     }
 
     $doorstopTry = Join-Path $cand "doorstop_config.ini"
@@ -98,10 +96,17 @@ foreach ($cand in $sourceCandidates) {
 }
 
 if ($null -eq $resolvedCoreDir) {
-    throw "Could not find complete BepInEx 5 core DLL set. Pass -BepInExSourceDir pointing to a folder containing BepInEx\core and loaders\."
+    throw "Could not find complete BepInEx 5 core DLL set. Pass -BepInExSourceDir pointing to a folder containing BepInEx\core."
 }
-if ($null -eq $resolvedLoadersDir) {
-    throw "Could not find Doorstop proxy loaders (winhttp.dll, version.dll, winmm.dll). Pass -BepInExSourceDir pointing to a folder containing loaders\."
+if ($null -eq $resolvedWinhttp) {
+    throw "Could not find Unity Doorstop winhttp.dll. Pass -BepInExSourceDir pointing to a folder containing winhttp.dll or loaders\winhttp.dll."
+}
+
+$winhttpBytes = [System.IO.File]::ReadAllBytes($resolvedWinhttp)
+$winhttpAscii = [System.Text.Encoding]::ASCII.GetString($winhttpBytes)
+if (($winhttpAscii.IndexOf("doorstop", [System.StringComparison]::OrdinalIgnoreCase) -lt 0) -or
+    ($winhttpAscii.IndexOf("lego", [System.StringComparison]::OrdinalIgnoreCase) -ge 0)) {
+    throw "Refusing to package '$resolvedWinhttp': binary signature check failed (not genuine Unity Doorstop)."
 }
 
 Write-Output "[2/4] Preparing release staging directory..."
@@ -174,7 +179,7 @@ Copy-Item -Path $builtDll -Destination $manualDllPath -Force
 # Audit ZIP entries to ensure zero forbidden third-party mod or game files leaked in.
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 $forbiddenSubstrings = @("Indonesian", "runtime_id", "Assembly-CSharp", "UnityEngine", "data.unity3d")
-$forbiddenExactNames = @("config.ini", "game_bible.md", "glossary.csv", "decisions_log.md")
+$forbiddenExactNames = @("config.ini", "game_bible.md", "glossary.csv", "decisions_log.md", "version.dll", "winmm.dll")
 $zip = [System.IO.Compression.ZipFile]::OpenRead($zipPath)
 try {
     foreach ($entry in $zip.Entries) {

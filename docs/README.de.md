@@ -24,7 +24,7 @@ Eine lokale Splitscreen-Koop-Mod auf Basis von BepInEx 5 fuer **Lost and Found C
 
 ## Kompatibilitaet mit der Indonesian Localization Mod
 
-Diese Mod arbeitet konfliktfrei mit `LostAndFound_Indonesian.dll` (`com.teteh.lostandfoundco.indonesian`) zusammen:
+Diese Mod arbeitet konfliktfrei mit **[Lost and Found Co. Indonesian Localization Mod](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** (`LostAndFound_Indonesian.dll`, GUID `com.teteh.lostandfoundco.indonesian`) zusammen:
 
 - Ist Bahasa Indonesia im Spiel aktiv, wechseln Panel (`F10`), Ecken-Badges, Wartekarte und Benachrichtigungen automatisch auf Bahasa Indonesia.
 - Das 2P-Layout liegt ausschliesslich auf `F11`, sodass `F9` fuer das Hot-Reloading der Uebersetzungsmod frei bleibt.
@@ -39,7 +39,7 @@ Diese Mod arbeitet konfliktfrei mit `LostAndFound_Indonesian.dll` (`com.teteh.lo
 1. Lade **`LostAndFound-SplitScreenCoop-v1.0.4-AutoInstall.zip`** von der [GitHub Releases](https://github.com/AkmalHidayat/LostAndFound-SplitScreenCoop/releases)-Seite herunter.
 2. Entpacke den gesamten Inhalt des Archivs direkt in deinen Hauptordner von **Lost and Found Co.** (neben `Lost and Found Co.exe`).
 3. Fuehre **`Install_SplitScreenCoop.bat`** per Doppelklick aus (Konsolenausgaben auf Englisch).
-   - Ist BepInEx 5 noch nicht vorhanden, waehlt das Skript automatisch einen freien Proxy-Slot (`winhttp.dll`, `version.dll` oder `winmm.dll`), ohne bestehende Dateien zu ueberschreiben.
+   - Ist BepInEx 5 noch nicht vorhanden, installiert das Skript Unity Doorstop (`winhttp.dll`), ohne bestehende Dateien zu ueberschreiben.
    - Ist BepInEx 5 bereits vorhanden, bleibt dein bestehender Loader unveraendert und es wird nur `BepInEx\plugins\LostAndFound_SplitScreenCoop.dll` kopiert.
 4. Starte **Lost and Found Co.** normal ueber Steam.
 

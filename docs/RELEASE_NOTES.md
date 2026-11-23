@@ -4,8 +4,8 @@
 
 - **Automatic Multi-Language In-Game UI**: Control panel (`F10`), player corner badges, P4 standby tile, and toast alerts now follow the game's active language setting (`English`, `Thai`, `Simplified Chinese`, `Traditional Chinese`, `Japanese`, `Korean`, `German`, plus `Bahasa Indonesia` when the Indonesian Localization Mod is installed, and fallback tables for community I2 slots `fr`, `es-ES`, `it`, `ru`, `sv-SE`, `tr`, `pt-BR`, `vi`).
 - **Dynamic OS Font Support**: Added per-script dynamic font resolution so Thai, Chinese, Japanese, Korean, Cyrillic, and Vietnamese text renders cleanly in mod overlays.
-- **Full Coexistence with Indonesian Localization Mod**: Automatically detects `LostAndFound_Indonesian.dll` (`com.teteh.lostandfoundco.indonesian`), aligns UI labels with its glossary, and moves layout switching solely to `F11` so `F9` remains free for dictionary hot-reload.
-- **Three Public Installation Options**: Auto-Install ZIP (with non-destructive English installer/uninstaller), standalone manual DLL, and portable source build scripts.
+- **Full Coexistence with Indonesian Localization Mod**: Automatically detects [`LostAndFound_Indonesian.dll`](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod) (`com.teteh.lostandfoundco.indonesian`), aligns UI labels with its glossary, and moves layout switching solely to `F11` so `F9` remains free for dictionary hot-reload.
+- **Three Public Installation Options**: Auto-Install ZIP (with non-destructive English installer/uninstaller bundling genuine Unity Doorstop `winhttp.dll`), standalone manual DLL, and portable source build scripts.
 
 ## Which Download Should You Pick?
 

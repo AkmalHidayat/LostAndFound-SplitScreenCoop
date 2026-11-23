@@ -19,7 +19,7 @@ set "PKG_DLL=%PKG_DIR%\BepInEx\plugins\LostAndFound_SplitScreenCoop.dll"
 set "PKG_CORE=%PKG_DIR%\BepInEx\core"
 set "LOADER_DIR=%PKG_DIR%\loaders"
 set "MANIFEST=%PKG_DIR%\install_manifest.txt"
-set "CANDIDATES=winhttp.dll version.dll winmm.dll"
+set "CANDIDATES=winhttp.dll"
 
 echo ================================================================
 echo   LOST AND FOUND CO. - SPLIT-SCREEN CO-OP MOD - INSTALLER
@@ -114,7 +114,7 @@ for %%P in (%CANDIDATES%) do (
 
 if not defined SELECTED_LOADER (
     echo(
-    echo [STOP] All proxy slots ^(winhttp.dll, version.dll, winmm.dll^) are already occupied.
+    echo [STOP] Proxy slot ^(winhttp.dll^) is already occupied by another tool or mod.
     echo No files were changed. If you already use BepInEx 5, install manually by copying
     echo "%PKG_FOLDER%\BepInEx\plugins\LostAndFound_SplitScreenCoop.dll" into "BepInEx\plugins\".
     set "EXIT_CODE=2"

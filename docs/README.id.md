@@ -25,7 +25,7 @@ Mod co-op split-screen lokal berbasis BepInEx 5 untuk game **Lost and Found Co.*
 
 ## Kompatibilitas dengan Mod Bahasa Indonesia
 
-Mod ini dirancang untuk berjalan berdampingan dengan **Mod Bahasa Indonesia Lost and Found Co.** (`LostAndFound_Indonesian.dll`, GUID `com.teteh.lostandfoundco.indonesian`):
+Mod ini dirancang untuk berjalan berdampingan dengan **[Mod Bahasa Indonesia Lost and Found Co.](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** (`LostAndFound_Indonesian.dll`, GUID `com.teteh.lostandfoundco.indonesian`):
 
 - **UI Otomatis Berbahasa Indonesia**: Saat Mod Bahasa Indonesia aktif di dalam game, panel kontrol `F10`, label sudut pemain, kartu tunggu P4, dan toast notifikasi otomatis tampil dalam Bahasa Indonesia dengan istilah yang konsisten (seperti `Daftar Tugas` untuk To-Do List).
 - **Bebas Konflik Tombol Pintas**: Pergantian tata letak 2 pemain hanya memakai `F11`, sehingga tombol `F9` tetap sepenuhnya bebas untuk fitur hot-reload kamus milik Mod Bahasa Indonesia.
@@ -43,7 +43,7 @@ Pilih metode instalasi yang sesuai dengan kebutuhan Anda.
 2. Ekstrak seluruh isi file ZIP langsung ke folder utama game **Lost and Found Co.** (di sebelah `Lost and Found Co.exe`).
    - Lokasi default Steam: `C:\Program Files (x86)\Steam\steamapps\common\Lost and Found Co`
 3. Klik dua kali **`Install_SplitScreenCoop.bat`** (bahasa antarmuka skrip: Bahasa Inggris).
-   - Jika BepInEx 5 belum terpasang, installer otomatis memilih slot loader proxy kosong (`winhttp.dll`, `version.dll`, atau `winmm.dll`) tanpa menimpa file yang ada, lalu memasang BepInEx 5.4.23.5 + mod ini.
+   - Jika BepInEx 5 belum terpasang dan `winhttp.dll` masih kosong, installer otomatis memasang Unity Doorstop (`winhttp.dll`) tanpa menimpa file yang ada, lalu memasang BepInEx 5.4.23.5 + mod ini.
    - Jika BepInEx 5 atau Mod Bahasa Indonesia sudah terpasang sebelumnya, installer membiarkan loader lama tetap utuh dan hanya menambahkan `BepInEx\plugins\LostAndFound_SplitScreenCoop.dll`.
 4. Jalankan **Lost and Found Co.** lewat Steam seperti biasa.
 

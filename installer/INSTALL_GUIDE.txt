@@ -13,9 +13,9 @@
    - If you already use BepInEx 5 or another mod (such as the Indonesian
      Localization Mod), the installer leaves your existing loader and
      plugins untouched and only adds LostAndFound_SplitScreenCoop.dll.
-   - If your game folder is clean, the installer automatically chooses a
-     free Doorstop proxy slot (winhttp.dll, version.dll, or winmm.dll)
-     and sets up BepInEx 5.
+   - If your game folder is clean, the installer uses the free Unity Doorstop
+     proxy slot (winhttp.dll) and sets up BepInEx 5 without overwriting
+     existing files.
 
 3) Launch "Lost and Found Co." from Steam.
 
@@ -44,7 +44,8 @@ Gamepad Controls (Players 2-4, or P1 when Gamepad mode is enabled):
 ------------------------------------------------------------------------
 - The mod UI automatically matches your active game language (English,
   Thai, Simplified Chinese, Traditional Chinese, Japanese, Korean, German,
-  and Bahasa Indonesia when the Indonesian Localization Mod is active).
+  and Bahasa Indonesia when the Indonesian Localization Mod is active:
+  https://github.com/AkmalHidayat/LostAndFound-IndonesianMod).
 - You can also override the mod language in:
     BepInEx\config\com.teteh.lostandfound.splitscreencoop.cfg
 - F11 is used instead of F9 for layout switching so F9 remains free for

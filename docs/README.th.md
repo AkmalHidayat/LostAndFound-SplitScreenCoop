@@ -24,7 +24,7 @@
 
 ## การใช้งานร่วมกับม็อดภาษาอินโดนีเซีย (Indonesian Localization Mod)
 
-ม็อดนี้รองรับการทำงานร่วมกับ `LostAndFound_Indonesian.dll` (`com.teteh.lostandfoundco.indonesian`) โดยไม่ทับซ้อนกัน:
+ม็อดนี้รองรับการทำงานร่วมกับ **[ม็อดภาษาอินโดนีเซีย Lost and Found Co.](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** (`LostAndFound_Indonesian.dll` / `com.teteh.lostandfoundco.indonesian`) โดยไม่ทับซ้อนกัน:
 
 - เมื่อเกมเปิดใช้ภาษาอินโดนีเซีย แผงควบคุม `F10` ป้ายมุมจอ และข้อความแจ้งเตือนของม็อดจะสลับเป็นภาษาอินโดนีเซียให้อัตโนมัติ
 - ใช้ปุ่ม `F11` แทน `F9` สำหรับสลับรูปแบบหน้าจอ 2 คน เพื่อเว้น `F9` ไว้สำหรับโหลดพจนานุกรมใหม่ของม็อดแปลภาษา
@@ -40,7 +40,7 @@
 2. แตกไฟล์ทั้งหมดลงในโฟลเดอร์หลักของเกม **Lost and Found Co.** (ข้างไฟล์ `Lost and Found Co.exe`)
    - ตำแหน่งมาตรฐานของ Steam: `C:\Program Files (x86)\Steam\steamapps\common\Lost and Found Co`
 3. ดับเบิลคลิก **`Install_SplitScreenCoop.bat`** (ข้อความในตัวติดตั้งเป็นภาษาอังกฤษ)
-   - หากยังไม่มี BepInEx 5 ตัวติดตั้งจะเลือกช่อง Doorstop proxy ที่ว่างอยู่ (`winhttp.dll`, `version.dll` หรือ `winmm.dll`) และติดตั้ง BepInEx 5.4.23.5 พร้อมม็อดให้ทันที
+   - หากยังไม่มี BepInEx 5 ตัวติดตั้งจะใช้ Unity Doorstop (`winhttp.dll`) หากว่างอยู่ และติดตั้ง BepInEx 5.4.23.5 พร้อมม็อดให้ทันทีโดยไม่เขียนทับไฟล์เดิม
    - หากมี BepInEx 5 อยู่แล้ว ตัวติดตั้งจะไม่แก้ไฟล์ loader เดิม และคัดลอกเฉพาะ `BepInEx\plugins\LostAndFound_SplitScreenCoop.dll`
 4. เปิดเกม **Lost and Found Co.** ผ่าน Steam ตามปกติ
 

@@ -24,7 +24,7 @@ BepInEx 5 기반의 **Lost and Found Co.** (Windows x64) 로컬 화면 분할 �
 
 ## 인도네시아어 로컬라이제이션 모드와의 호환성
 
-`LostAndFound_Indonesian.dll`(`com.teteh.lostandfoundco.indonesian`)과 충돌 없이 함께 동작합니다:
+**[Lost and Found Co. 인도네시아어 로컬라이제이션 모드](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)**(`LostAndFound_Indonesian.dll` / `com.teteh.lostandfoundco.indonesian`)과 충돌 없이 함께 동작합니다:
 
 - 게임 언어가 인도네시아어로 설정되면 `F10` 제어 패널, 모서리 배지, 대기 화면 및 알림이 자동으로 인도네시아어로 전환됩니다.
 - 2인 배치 전환 단축키는 `F11`만 사용하여 인도네시아어 모드의 사전 리로드 단축키(`F9`)와 겹치지 않습니다.
@@ -39,7 +39,7 @@ BepInEx 5 기반의 **Lost and Found Co.** (Windows x64) 로컬 화면 분할 �
 1. [GitHub Releases](https://github.com/AkmalHidayat/LostAndFound-SplitScreenCoop/releases)에서 **`LostAndFound-SplitScreenCoop-v1.0.4-AutoInstall.zip`** 파일을 다운로드합니다.
 2. 압축 파일의 모든 내용을 **Lost and Found Co.** 설치 폴더(`Lost and Found Co.exe` 옆)에 풉니다.
 3. **`Install_SplitScreenCoop.bat`** 파일을 더블 클릭하여 실행합니다(설치기 안내는 영어로 표시됩니다).
-   - BepInEx 5가 없다면 비어 있는 프록시 슬롯(`winhttp.dll`, `version.dll`, `winmm.dll`)을 자동으로 선택해 안전하게 설치합니다.
+   - BepInEx 5가 없다면 비어 있는 Unity Doorstop 프록시 슬롯(`winhttp.dll`)을 통해 기존 파일을 덮어쓰지 않고 설치합니다.
    - BepInEx 5나 다른 모드가 이미 설치되어 있다면 기존 로더를 건드리지 않고 `BepInEx\plugins\LostAndFound_SplitScreenCoop.dll`만 추가합니다.
 4. Steam에서 게임을 평소처럼 실행합니다.
 
