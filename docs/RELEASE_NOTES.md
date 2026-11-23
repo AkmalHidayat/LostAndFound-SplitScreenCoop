@@ -1,6 +1,10 @@
 # Lost and Found Co. Split-Screen Co-op Mod v1.0.4
 
-**Tested Game Version**: Lost and Found Co. v1.2.2 (Steam, Windows x64) | **Mod Loader**: BepInEx 5.4.23.5 (x64)
+**Tested Game Version**: **Lost and Found Co. Patch 1.2.2** (27 Oct 2026, Steam Build `26480281`, Unity `6000.0.84f1`, Windows x64) | **Mod Loader**: BepInEx 5.4.23.5 (x64)
+
+## Other Mods by AkmalHidayat
+
+- **[Lost and Found Co. - Indonesian Localization Mod](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)**: Companion Bahasa Indonesia translation mod (16,718 entries) tested and updated through **Patch 1.2.2** (future game updates adding new levels after 1.2.2 will require a dictionary update to cover newly added text).
 
 ## Highlights in v1.0.4
 

@@ -4,10 +4,10 @@
 
 Mod co-op split-screen lokal berbasis BepInEx 5 untuk game **Lost and Found Co.** (Windows x64) yang mendukung 2 hingga 4 pemain dalam satu layar, lengkap dengan kamera independen, kursor virtual, isolasi input perangkat, layar penuh otomatis saat cutscene, dan antarmuka mod multi-bahasa.
 
-> **Versi Game yang Diuji**: **Lost and Found Co. v1.2.2** (Steam, Windows x64). Pembaruan patch minor umumnya tetap kompatibel selama struktur internal kamera, input, dan pencahayaan game tidak berubah.
+> **Versi Game yang Diuji**: **Lost and Found Co. Patch 1.2.2** (27 Oktober 2026, Steam Build `26480281`, Unity `6000.0.84f1`, Windows x64). Pembaruan patch minor umumnya tetap kompatibel selama struktur internal kamera, input, dan pencahayaan game tidak berubah.
 
 > [!TIP]
-> **Ingin bermain dalam Bahasa Indonesia?** Pasang bersama **[Mod Bahasa Indonesia Lost and Found Co.](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** (`LostAndFound_Indonesian.dll`). Kedua mod dirancang 100% kompatibel berjalan berdampingan tanpa konflik tombol, dan antarmuka mod Split-Screen ini akan otomatis tampil dalam Bahasa Indonesia saat mod tersebut aktif.
+> **Ingin bermain dalam Bahasa Indonesia?** Pasang bersama **[Mod Bahasa Indonesia Lost and Found Co.](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** (`LostAndFound_Indonesian.dll`), yang terjemahannya sudah di-update hingga **Patch 1.2.2**. Kedua mod berjalan berdampingan tanpa konflik tombol, dan UI mod Split-Screen otomatis tampil dalam Bahasa Indonesia saat mod tersebut aktif. Jika game mendapat update level/konten baru setelah Patch 1.2.2, teks barunya belum otomatis ter-cover sampai kamus mod Bahasa Indonesia ikut diperbarui.
 
 ## Fitur Utama
 
