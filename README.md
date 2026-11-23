@@ -4,7 +4,7 @@
 
 A BepInEx 5 local split-screen co-op mod for **Lost and Found Co.** (Windows x64) supporting 2 to 4 players on the same screen, with independent cameras, virtual cursors, device input isolation, automatic cutscene fullscreen handling, and multi-language mod UI.
 
-> **Tested Game Version**: **Lost and Found Co. Patch 1.2.2** (27 Oct 2026, Steam Build `26480281`, Unity `6000.0.84f1`, Windows x64). Minor patches typically remain compatible unless camera, input, or lighting internals change; if new levels or events are added later, the companion **[Indonesian Localization Mod](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** will also need a dictionary update to cover newly added text.
+> **Tested Game Version**: **Lost and Found Co. Patch 1.2.2** (27 Oct 2026, Steam Build `26480281`, Unity `6000.0.84f1`, Windows x64). Minor patches typically remain compatible unless internal camera, input, or lighting classes change.
 
 ## Features
 
