@@ -1,0 +1,117 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>LostAndFound_SplitScreenCoop</AssemblyName>
+    <RootNamespace>LostAndFoundSplitScreenCoop</RootNamespace>
+    <Description>Local Split-Screen Co-op Mod (up to 4 players) for Lost and Found Co.</Description>
+    <Authors>AkmalHidayat</Authors>
+    <Version>1.0.4</Version>
+    <RepositoryUrl>https://github.com/AkmalHidayat/LostAndFound-SplitScreenCoop</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <BaseIntermediateOutputPath>..\obj\</BaseIntermediateOutputPath>
+    <OutputPath>..\bin\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GameDir Condition="'$(GameDir)' == '' and '$(LOST_AND_FOUND_DIR)' != ''">$(LOST_AND_FOUND_DIR)</GameDir>
+    <GameDir Condition="'$(GameDir)' == '' and Exists('C:\Program Files (x86)\Steam\steamapps\common\Lost and Found Co\Lost and Found Co_Data\Managed\Assembly-CSharp.dll')">C:\Program Files (x86)\Steam\steamapps\common\Lost and Found Co</GameDir>
+    <GameDir Condition="'$(GameDir)' == '' and Exists('C:\SteamLibrary\steamapps\common\Lost and Found Co\Lost and Found Co_Data\Managed\Assembly-CSharp.dll')">C:\SteamLibrary\steamapps\common\Lost and Found Co</GameDir>
+    <GameDir Condition="'$(GameDir)' == '' and Exists('D:\SteamLibrary\steamapps\common\Lost and Found Co\Lost and Found Co_Data\Managed\Assembly-CSharp.dll')">D:\SteamLibrary\steamapps\common\Lost and Found Co</GameDir>
+    <GameDir Condition="'$(GameDir)' == '' and Exists('E:\SteamLibrary\steamapps\common\Lost and Found Co\Lost and Found Co_Data\Managed\Assembly-CSharp.dll')">E:\SteamLibrary\steamapps\common\Lost and Found Co</GameDir>
+    <GameDir Condition="'$(GameDir)' == '' and Exists('F:\SteamLibrary\steamapps\common\Lost and Found Co\Lost and Found Co_Data\Managed\Assembly-CSharp.dll')">F:\SteamLibrary\steamapps\common\Lost and Found Co</GameDir>
+    <ManagedDir>$(GameDir)\Lost and Found Co_Data\Managed</ManagedDir>
+    <BepInExCoreDir>$(GameDir)\BepInEx\core</BepInExCoreDir>
+  </PropertyGroup>
+
+  <Target Name="ValidateGameDir" BeforeTargets="BeforeBuild">
+    <Error
+      Condition="'$(GameDir)' == '' or !Exists('$(ManagedDir)\Assembly-CSharp.dll')"
+      Text="Game directory not found or missing Assembly-CSharp.dll. Pass -p:GameDir=&quot;C:\Path\To\Lost and Found Co&quot; or set LOST_AND_FOUND_DIR." />
+    <Error
+      Condition="!Exists('$(BepInExCoreDir)\BepInEx.dll') or !Exists('$(BepInExCoreDir)\0Harmony.dll')"
+      Text="BepInEx 5 core DLLs were not found under '$(BepInExCoreDir)'. Install BepInEx 5 (x64) into the game folder before building." />
+  </Target>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>$(BepInExCoreDir)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>$(BepInExCoreDir)\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(ManagedDir)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityCommunity.UnitySingleton.Runtime">
+      <HintPath>$(ManagedDir)\UnityCommunity.UnitySingleton.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(ManagedDir)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(ManagedDir)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(ManagedDir)\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>$(ManagedDir)\UnityEngine.UIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>$(ManagedDir)\UnityEngine.Physics2DModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>$(ManagedDir)\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>$(ManagedDir)\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>$(ManagedDir)\UnityEngine.AudioModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>$(ManagedDir)\UnityEngine.DirectorModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>$(ManagedDir)\Unity.InputSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>$(ManagedDir)\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>$(ManagedDir)\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>$(ManagedDir)\Cinemachine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="EPO">
+      <HintPath>$(ManagedDir)\EPO.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="ZBase.UnityScreenNavigator">
+      <HintPath>$(ManagedDir)\ZBase.UnityScreenNavigator.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

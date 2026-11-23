@@ -1,0 +1,66 @@
+========================================================================
+  LOST AND FOUND CO. - SPLIT-SCREEN CO-OP MOD - QUICK INSTALL GUIDE
+========================================================================
+
+1. INSTALLATION (AUTO-INSTALLER)
+------------------------------------------------------------------------
+1) Extract all files and folders from this ZIP directly into your main
+   Lost and Found Co. game folder (next to "Lost and Found Co.exe").
+   Default Steam path:
+     C:\Program Files (x86)\Steam\steamapps\common\Lost and Found Co
+
+2) Double-click "Install_SplitScreenCoop.bat".
+   - If you already use BepInEx 5 or another mod (such as the Indonesian
+     Localization Mod), the installer leaves your existing loader and
+     plugins untouched and only adds LostAndFound_SplitScreenCoop.dll.
+   - If your game folder is clean, the installer automatically chooses a
+     free Doorstop proxy slot (winhttp.dll, version.dll, or winmm.dll)
+     and sets up BepInEx 5.
+
+3) Launch "Lost and Found Co." from Steam.
+
+
+2. CONTROLS & HOTKEYS
+------------------------------------------------------------------------
+Keyboard Shortcuts:
+  F8   - Toggle Split-Screen Co-op ON / OFF
+  F11  - Switch 2-Player layout (Left/Right <-> Top/Bottom)
+  F7   - Switch Player 1 between Mouse+Keyboard and Gamepad 1
+  F10  - Open/Close the Split-Screen Control Panel
+  F6   - Toggle P2 Keyboard Test Mode (IJKL cursor, Arrow keys pan,
+         U/O zoom, Enter click)
+
+Gamepad Controls (Players 2-4, or P1 when Gamepad mode is enabled):
+  Left Stick      - Move cursor
+  Right Stick     - Pan camera
+  LT/RT or LB/RB  - Zoom out / Zoom in
+  A               - Click / Drag item
+  Hold Y or L3    - Unlock cursor across full screen for HUD & To-Do List
+  Press R3        - Reset camera to Player 1's view
+  Start           - Hot-join co-op from any connected gamepad
+
+
+3. LANGUAGE & INDONESIAN MOD COMPATIBILITY
+------------------------------------------------------------------------
+- The mod UI automatically matches your active game language (English,
+  Thai, Simplified Chinese, Traditional Chinese, Japanese, Korean, German,
+  and Bahasa Indonesia when the Indonesian Localization Mod is active).
+- You can also override the mod language in:
+    BepInEx\config\com.teteh.lostandfound.splitscreencoop.cfg
+- F11 is used instead of F9 for layout switching so F9 remains free for
+  the Indonesian Localization Mod's dictionary hot-reload.
+
+
+4. UNINSTALLING
+------------------------------------------------------------------------
+Double-click "Uninstall_SplitScreenCoop.bat" in your game folder.
+The uninstaller verifies SHA-256 hashes before deleting anything and keeps
+BepInEx intact if any other plugins are installed.
+
+========================================================================
+Project & Source Code:
+  https://github.com/AkmalHidayat/LostAndFound-SplitScreenCoop
+License:
+  Mod code: MIT (LICENSE)
+  Bundled BepInEx 5 & Doorstop: LGPL-2.1 / MIT (THIRD_PARTY_NOTICES.md)
+========================================================================
