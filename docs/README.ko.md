@@ -47,12 +47,14 @@ BepInEx 5 기반의 **Lost and Found Co.** (Windows x64) 로컬 화면 분할 �
 
 모드를 제거하려면 게임 폴더의 **`Uninstall_SplitScreenCoop.bat`**을 실행하세요. SHA-256 해시를 확인한 후 안전하게 삭제하며, 다른 플러그인이 남아 있으면 BepInEx는 유지됩니다.
 
-### 방법 2: 수동 DLL 복사
+### 방법 2: 수동 드래그 앤 드롭 ZIP
 
-이미 **BepInEx 5.4.x (x64)**가 설치되어 있는 경우:
+`.bat` 스크립트를 실행하지 않고 직접 파일을 복사하려면:
 
-1. [GitHub Releases](https://github.com/AkmalHidayat/LostAndFound-SplitScreenCoop/releases)에서 **`LostAndFound_SplitScreenCoop.dll`**을 다운로드합니다.
-2. `<게임 폴더>\BepInEx\plugins\LostAndFound_SplitScreenCoop.dll` 위치에 복사합니다.
+1. [GitHub Releases](https://github.com/AkmalHidayat/LostAndFound-SplitScreenCoop/releases)에서 **`LostAndFound-SplitScreenCoop-v1.0.4-Manual.zip`**을 다운로드하여 임시 폴더에 풉니다.
+2. 게임 폴더 상태에 따라 알맞게 복사합니다:
+   - **BepInEx가 없는 순정 게임 폴더**: `winhttp.dll`, `doorstop_config.ini`, `BepInEx` 폴더를 모두 `<게임 폴더>`(`Lost and Found Co.exe` 옆)로 드래그 앤 드롭합니다.
+   - **이미 BepInEx 5 또는 인도네시아어 모드가 설치된 경우**: `BepInEx\plugins\LostAndFound_SplitScreenCoop.dll`만 `<게임 폴더>\BepInEx\plugins\`로 복사합니다(기존 `winhttp.dll`과 `doorstop_config.ini`는 덮어쓰지 마세요).
 
 ### 방법 3: 소스 코드에서 직접 빌드
 

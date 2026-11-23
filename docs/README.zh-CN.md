@@ -48,12 +48,14 @@
 
 卸载时只需运行游戏目录中的 **`Uninstall_SplitScreenCoop.bat`**，脚本会校验 SHA-256 哈希值后安全移除；若存在其他插件，会自动保留 BepInEx。
 
-### 方式二：手动拖放 DLL
+### 方式二：手动拖放完整目录 ZIP
 
-如果您已经安装过 **BepInEx 5.4.x (x64)**：
+适合希望手动放置文件而不运行 `.bat` 安装脚本的玩家：
 
-1. 在 [GitHub Releases](https://github.com/AkmalHidayat/LostAndFound-SplitScreenCoop/releases) 下载 **`LostAndFound_SplitScreenCoop.dll`**。
-2. 将文件放入 `<游戏目录>\BepInEx\plugins\LostAndFound_SplitScreenCoop.dll`。
+1. 在 [GitHub Releases](https://github.com/AkmalHidayat/LostAndFound-SplitScreenCoop/releases) 下载 **`LostAndFound-SplitScreenCoop-v1.0.4-Manual.zip`** 并解压到临时文件夹。
+2. 根据您的游戏目录情况放置文件：
+   - **纯净游戏目录（尚未安装 BepInEx）**：将 `winhttp.dll`、`doorstop_config.ini` 和 `BepInEx` 文件夹直接拖放到 `<游戏目录>`（与 `Lost and Found Co.exe` 同级）。
+   - **已安装 BepInEx 5 或印尼语本地化模组**：只需将 `BepInEx\plugins\LostAndFound_SplitScreenCoop.dll` 放入 `<游戏目录>\BepInEx\plugins\`（不要覆盖现有的 `winhttp.dll` 或 `doorstop_config.ini`）。
 
 ### 方式三：从源码自行编译
 

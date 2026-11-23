@@ -47,12 +47,14 @@
 
 アンインストールは同フォルダ内の **`Uninstall_SplitScreenCoop.bat`** を実行してください。SHA-256 を検証したうえで削除し、他のプラグインが存在する場合は BepInEx を残します。
 
-### 方法 2: DLL の手動配置
+### 方法 2: 手動ドラッグ＆ドロップ用 ZIP
 
-すでに **BepInEx 5.4.x (x64)** を導入済みの場合:
+`.bat` スクリプトを使わず手動で配置したい場合:
 
-1. [GitHub Releases](https://github.com/AkmalHidayat/LostAndFound-SplitScreenCoop/releases) から **`LostAndFound_SplitScreenCoop.dll`** をダウンロードします。
-2. `<ゲームフォルダ>\BepInEx\plugins\LostAndFound_SplitScreenCoop.dll` にコピーします。
+1. [GitHub Releases](https://github.com/AkmalHidayat/LostAndFound-SplitScreenCoop/releases) から **`LostAndFound-SplitScreenCoop-v1.0.4-Manual.zip`** をダウンロードし、一時フォルダに展開します。
+2. ゲームフォルダの状況に合わせてコピーします:
+   - **まだ BepInEx が入っていない場合**: `winhttp.dll`、`doorstop_config.ini`、`BepInEx` フォルダをすべて `<ゲームフォルダ>`（`Lost and Found Co.exe` の横）へドラッグ＆ドロップします。
+   - **すでに BepInEx 5 やインドネシア語 MOD を導入済みの場合**: `BepInEx\plugins\LostAndFound_SplitScreenCoop.dll` のみを `<ゲームフォルダ>\BepInEx\plugins\` へコピーします（既存の `winhttp.dll` や `doorstop_config.ini` は上書きしないでください）。
 
 ### 方法 3: ソースコードからビルド
 

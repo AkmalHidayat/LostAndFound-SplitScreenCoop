@@ -47,12 +47,14 @@
 
 移除時請執行遊戲資料夾內的 **`Uninstall_SplitScreenCoop.bat`**；腳本會先比對 SHA-256 雜湊值再刪除，且若偵測到其他外掛模組會保留 BepInEx。
 
-### 方法二：手動拖放 DLL
+### 方法二：手動拖放完整目錄 ZIP
 
-若遊戲資料夾已安裝 **BepInEx 5.4.x (x64)**：
+適合希望手動複製檔案、不執行 `.bat` 安裝指令碼的玩家：
 
-1. 自 [GitHub Releases](https://github.com/AkmalHidayat/LostAndFound-SplitScreenCoop/releases) 下載 **`LostAndFound_SplitScreenCoop.dll`**。
-2. 放進 `<遊戲資料夾>\BepInEx\plugins\LostAndFound_SplitScreenCoop.dll`。
+1. 自 [GitHub Releases](https://github.com/AkmalHidayat/LostAndFound-SplitScreenCoop/releases) 下載 **`LostAndFound-SplitScreenCoop-v1.0.4-Manual.zip`** 並解壓縮至暫存資料夾。
+2. 依照遊戲資料夾狀態放入檔案：
+   - **全新遊戲資料夾（尚未安裝 BepInEx）**：將 `winhttp.dll`、`doorstop_config.ini` 與 `BepInEx` 資料夾直接拖放進 `<遊戲資料夾>`（與 `Lost and Found Co.exe` 同層）。
+   - **已安裝 BepInEx 5 或印尼語本地化模組**：只須將 `BepInEx\plugins\LostAndFound_SplitScreenCoop.dll` 放進 `<遊戲資料夾>\BepInEx\plugins\`（請勿覆蓋既有的 `winhttp.dll` 或 `doorstop_config.ini`）。
 
 ### 方法三：從原始碼自行建置
 

@@ -48,10 +48,12 @@
 
 หากต้องการถอนติดตั้ง ให้ดับเบิลคลิก **`Uninstall_SplitScreenCoop.bat`** ระบบจะตรวจแฮช SHA-256 ก่อนลบไฟล์ และคง BepInEx ไว้หากยังมีปลั๊กอินอื่นใช้งานอยู่
 
-### วิธีที่ 2: วางไฟล์ DLL ด้วยตนเอง (สำหรับผู้ที่มี BepInEx 5 อยู่แล้ว)
+### วิธีที่ 2: ไฟล์ ZIP แบบลากวางด้วยตนเอง (Manual Drag-and-Drop)
 
-1. ดาวน์โหลด **`LostAndFound_SplitScreenCoop.dll`** จากหน้า [GitHub Releases](https://github.com/AkmalHidayat/LostAndFound-SplitScreenCoop/releases)
-2. วางไฟล์ลงในโฟลเดอร์ `<โฟลเดอร์เกม>\BepInEx\plugins\LostAndFound_SplitScreenCoop.dll`
+1. ดาวน์โหลด **`LostAndFound-SplitScreenCoop-v1.0.4-Manual.zip`** จากหน้า [GitHub Releases](https://github.com/AkmalHidayat/LostAndFound-SplitScreenCoop/releases) แล้วแตกไฟล์ไว้ในโฟลเดอร์ชั่วคราว
+2. เลือกวางไฟล์ตามสถานะโฟลเดอร์เกมของคุณ:
+   - **โฟลเดอร์เกมใหม่ (ยังไม่มี BepInEx)**: ลากวาง `winhttp.dll`, `doorstop_config.ini` และโฟลเดอร์ `BepInEx` ลงในโฟลเดอร์หลักของเกม (ข้างไฟล์ `Lost and Found Co.exe`)
+   - **มี BepInEx 5 หรือม็อดภาษาอินโดนีเซียอยู่แล้ว**: ลากวางเฉพาะ `BepInEx\plugins\LostAndFound_SplitScreenCoop.dll` ลงใน `<โฟลเดอร์เกม>\BepInEx\plugins\` (ห้ามเขียนทับ `winhttp.dll` หรือ `doorstop_config.ini` เดิม)
 3. เปิดเกมผ่าน Steam
 
 ### วิธีที่ 3: คอมไพล์จากซอร์สโค้ด

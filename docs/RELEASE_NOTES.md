@@ -20,9 +20,9 @@
    - Includes BepInEx 5.4.23.5 + Doorstop loaders (`LGPL-2.1` / `MIT`, see `THIRD_PARTY_NOTICES.md`).
    - Safe to extract directly on top of an existing BepInEx or Indonesian Localization Mod setup: the installer automatically detects existing loaders and only adds `LostAndFound_SplitScreenCoop.dll` without overwriting anything.
 
-2. **`LostAndFound_SplitScreenCoop.dll` (Manual drag-and-drop)**
-   - For players who already have BepInEx 5 (x64) working in *Lost and Found Co.*
-   - Drop this file into `<Game Folder>\BepInEx\plugins\`.
+2. **`LostAndFound-SplitScreenCoop-v1.0.4-Manual.zip` (Manual drag-and-drop package)**
+   - Contains the full ready-to-drop folder layout (`winhttp.dll`, `doorstop_config.ini`, `BepInEx\core\`, and `BepInEx\plugins\LostAndFound_SplitScreenCoop.dll`) without `.bat` scripts.
+   - Extract and drag the contents into `<Game Folder>` (clean setup) or copy only `BepInEx\plugins\LostAndFound_SplitScreenCoop.dll` if BepInEx 5 or the Indonesian Localization Mod is already installed.
 
 3. **`Source code (zip/tar.gz)`**
    - For developers or players who prefer compiling `LostAndFound_SplitScreenCoop.dll` themselves. Follow `docs/BUILDING.md`.

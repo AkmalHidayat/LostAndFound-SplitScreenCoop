@@ -55,15 +55,14 @@ Pilih metode instalasi yang sesuai dengan kebutuhan Anda.
 
 Untuk menghapus mod, klik dua kali **`Uninstall_SplitScreenCoop.bat`** di folder game. Uninstaller memeriksa hash SHA-256 sebelum menghapus file, dan menjaga BepInEx tetap terpasang apabila masih ada plugin lain di folder `BepInEx\plugins\`.
 
-### Metode 2: Drag-and-Drop DLL Manual
+### Metode 2: ZIP Drag-and-Drop Manual
 
-Gunakan cara ini jika **BepInEx 5.4.x (x64)** sudah terpasang di folder game Anda:
+Gunakan paket ini jika Anda lebih suka menyalin folder dan file secara manual tanpa menjalankan skrip `.bat`:
 
-1. Unduh **`LostAndFound_SplitScreenCoop.dll`** dari halaman [GitHub Releases](https://github.com/AkmalHidayat/LostAndFound-SplitScreenCoop/releases).
-2. Salin `LostAndFound_SplitScreenCoop.dll` ke:
-   ```text
-   <Folder Game>\BepInEx\plugins\LostAndFound_SplitScreenCoop.dll
-   ```
+1. Unduh **`LostAndFound-SplitScreenCoop-v1.0.4-Manual.zip`** dari halaman [GitHub Releases](https://github.com/AkmalHidayat/LostAndFound-SplitScreenCoop/releases), lalu ekstrak ke folder sementara.
+2. Pilih cara sesuai kondisi folder game Anda:
+   - **Folder game masih bersih (belum ada BepInEx)**: Drag-and-drop `winhttp.dll`, `doorstop_config.ini`, dan folder `BepInEx` langsung ke `<Folder Game>` (tepat di sebelah `Lost and Found Co.exe`).
+   - **BepInEx 5 atau Mod Bahasa Indonesia sudah terpasang**: Drag-and-drop hanya `BepInEx\plugins\LostAndFound_SplitScreenCoop.dll` ke `<Folder Game>\BepInEx\plugins\` (jangan timpa `winhttp.dll` maupun `doorstop_config.ini` yang sudah ada).
 3. Jalankan game lewat Steam.
 
 ### Metode 3: Build dari Source Code

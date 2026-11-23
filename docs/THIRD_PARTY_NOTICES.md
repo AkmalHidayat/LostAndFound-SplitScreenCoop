@@ -2,7 +2,7 @@
 
 The source code of **Lost and Found Co. Split-Screen Co-op Mod** (`src/`, `scripts/`, `installer/`) is licensed under the **MIT License** (see [LICENSE](../LICENSE)).
 
-The pre-packaged **Auto-Install Release ZIP** (`LostAndFound-SplitScreenCoop-v*-AutoInstall.zip`) distributes the following third-party mod loader components under their respective open-source licenses so new users can install the mod in one step without assembling dependencies manually. These third-party binaries are excluded from the Git source tree.
+The pre-packaged release archives (`LostAndFound-SplitScreenCoop-v*-AutoInstall.zip` and `LostAndFound-SplitScreenCoop-v*-Manual.zip`) distribute the following third-party mod loader components under their respective open-source licenses so new users can run the mod without assembling dependencies manually. These third-party binaries are excluded from the Git source tree.
 
 ## 1. BepInEx 5 (5.4.23.5)
 
@@ -29,6 +29,6 @@ The pre-packaged **Auto-Install Release ZIP** (`LostAndFound-SplitScreenCoop-v*-
 
 - **Project**: https://github.com/NeighTools/UnityDoorstop
 - **License**: GNU Lesser General Public License v2.1 (LGPL-2.1)
-- **Bundled files in release archive**:
-  - `loaders/winhttp.dll`
+- **Bundled files in release archives**:
+  - `winhttp.dll` (`loaders/winhttp.dll` in Auto-Install ZIP, root `winhttp.dll` in Manual ZIP)
   - `doorstop_config.ini`
