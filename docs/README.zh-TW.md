@@ -6,6 +6,8 @@
 
 > **已測試遊戲版本**: **Lost and Found Co. Patch 1.2.2**（2026 年 10 月 27 日，Steam Build `26480281`，Unity `6000.0.84f1`，Windows x64）。只要遊戲內部的相機、輸入與光照類別沒有大幅變動，後續小幅更新通常可正常相容。
 
+![3人分割畫面視口與P4待機加入欄位預覽圖](assets/split-screen-preview.jpg)
+
 ## 主要功能
 
 - **支援 2 至 4 人本地同玩**:
@@ -24,9 +26,9 @@
 - **模組介面自動多語系**:
   - 自動跟隨遊戲設定語系（`en`、`th`、`zh-CN`、`zh-TW`、`ja`、`ko`、`de`，安裝印尼語模組時支援 `id`，並預置 `fr`、`es-ES`、`it`、`ru`、`sv-SE`、`tr`、`pt-BR`、`vi`），並自動套用 Windows 對應系統字型（微軟正黑體、微軟雅黑、Yu Gothic、Leelawadee UI 等）。
 
-## 我們製作的其他模組與相容性
+## 我製作的其他模組與相容性
 
-我們也製作了配套的 **[Lost and Found Co. 印尼語本地化模組](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)**（`LostAndFound_Indonesian.dll` / `com.teteh.lostandfoundco.indonesian`，16,718 條詞庫已更新至 **Patch 1.2.2**；日後遊戲更新若有新增關卡須待詞庫同步更新），可與本模組安全共存：
+我也製作了配套的 **[Lost and Found Co. 印尼語本地化模組](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)**（`LostAndFound_Indonesian.dll` / `com.teteh.lostandfoundco.indonesian`，16,718 條詞庫已更新至 **Patch 1.2.2**；日後遊戲更新若有新增關卡須待詞庫同步更新），可與本模組安全共存：
 
 - 遊戲啟用印尼語時，合作面板 `F10`、角落標籤、P4 待命卡片與提示訊息會自動切換為印尼語。
 - 版面切換快捷鍵僅使用 `F11`，保留 `F9` 供印尼語模組進行詞庫熱重載。

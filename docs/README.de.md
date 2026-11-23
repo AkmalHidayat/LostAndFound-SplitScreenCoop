@@ -6,6 +6,8 @@ Eine lokale Splitscreen-Koop-Mod auf Basis von BepInEx 5 fuer **Lost and Found C
 
 > **Getestete Spielversion**: **Lost and Found Co. Patch 1.2.2** (27. Oktober 2026, Steam Build `26480281`, Unity `6000.0.84f1`, Windows x64). Kleinere Updates bleiben in der Regel kompatibel, solange sich interne Kamera-, Eingabe- oder Beleuchtungsklassen nicht aendern.
 
+![Vorschau der Lost and Found Co. Splitscreen-Koop-Mod mit 3 aktiven Spieler-Ansichten und P4-Wartefeld](assets/split-screen-preview.jpg)
+
 ## Funktionen
 
 - **2 bis 4 lokale Spieler**:
@@ -24,9 +26,9 @@ Eine lokale Splitscreen-Koop-Mod auf Basis von BepInEx 5 fuer **Lost and Found C
 - **Mehrsprachige Mod-UI**:
   - Folgt automatisch der Spielsprache (`en`, `th`, `zh-CN`, `zh-TW`, `ja`, `ko`, `de`), unterstuetzt **Bahasa Indonesia (`id`)** bei installierter indonesischer Sprachmod sowie die uebrigen I2-Sprachslots (`fr`, `es-ES`, `it`, `ru`, `sv-SE`, `tr`, `pt-BR`, `vi`).
 
-## Weitere Mods von uns & Kompatibilitaet
+## Meine weiteren Mods & Kompatibilitaet
 
-Unsere Begleitmod **[Lost and Found Co. Indonesian Localization Mod](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** (`LostAndFound_Indonesian.dll`, GUID `com.teteh.lostandfoundco.indonesian`) fuegt vollstaendige Bahasa-Indonesia-Uebersetzungen (16.718 Eintraege, aktualisiert bis **Patch 1.2.2**; neuere Level nach 1.2.2 erfordern ein Woerterbuch-Update) hinzu und arbeitet konfliktfrei zusammen:
+Meine Begleitmod **[Lost and Found Co. Indonesian Localization Mod](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** (`LostAndFound_Indonesian.dll`, GUID `com.teteh.lostandfoundco.indonesian`) fuegt vollstaendige Bahasa-Indonesia-Uebersetzungen (16.718 Eintraege, aktualisiert bis **Patch 1.2.2**; neuere Level nach 1.2.2 erfordern ein Woerterbuch-Update) hinzu und arbeitet konfliktfrei zusammen:
 
 - Ist Bahasa Indonesia im Spiel aktiv, wechseln Panel (`F10`), Ecken-Badges, Wartekarte und Benachrichtigungen automatisch auf Bahasa Indonesia.
 - Das 2P-Layout liegt ausschliesslich auf `F11`, sodass `F9` fuer das Hot-Reloading der Uebersetzungsmod frei bleibt.

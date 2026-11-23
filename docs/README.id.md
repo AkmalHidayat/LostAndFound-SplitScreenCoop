@@ -9,6 +9,8 @@ Mod co-op split-screen lokal berbasis BepInEx 5 untuk game **Lost and Found Co.*
 > [!TIP]
 > **Ingin bermain dalam Bahasa Indonesia?** Pasang bersama **[Mod Bahasa Indonesia Lost and Found Co.](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** (`LostAndFound_Indonesian.dll`), yang terjemahannya sudah di-update hingga **Patch 1.2.2**. Kedua mod berjalan berdampingan tanpa konflik tombol, dan UI mod Split-Screen otomatis tampil dalam Bahasa Indonesia saat mod tersebut aktif. Jika game mendapat update level/konten baru setelah Patch 1.2.2, teks barunya belum otomatis ter-cover sampai kamus mod Bahasa Indonesia ikut diperbarui.
 
+![Pratinjau Mod Co-op Split-Screen Lost and Found Co. dengan 3 viewport aktif dan slot tunggu P4](assets/split-screen-preview.jpg)
+
 ## Fitur Utama
 
 - **2 hingga 4 Pemain Lokal**:
@@ -28,9 +30,9 @@ Mod co-op split-screen lokal berbasis BepInEx 5 untuk game **Lost and Found Co.*
   - Otomatis mengikuti bahasa aktif game (`en`, `th`, `zh-CN`, `zh-TW`, `ja`, `ko`, `de`), **Bahasa Indonesia (`id`)** jika Mod Bahasa Indonesia terpasang, serta cadangan untuk 8 slot I2 tambahan (`fr`, `es-ES`, `it`, `ru`, `sv-SE`, `tr`, `pt-BR`, `vi`).
   - Memilih font sistem Windows secara dinamis agar aksara Thailand, Tionghoa, Jepang, Korea, Cyrillic, dan Vietnam tampil rapi tanpa kotak kosong.
 
-## Mod Lain dari Kami & Kompatibilitas
+## Mod Lain Saya & Kompatibilitas
 
-Kami juga membuat mod lokalisasi pendamping untuk game ini: **[Lost and Found Co. - Mod Bahasa Indonesia](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** (`LostAndFound_Indonesian.dll`, GUID `com.teteh.lostandfoundco.indonesian`):
+Saya juga membuat mod lokalisasi pendamping untuk game ini: **[Lost and Found Co. - Mod Bahasa Indonesia](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** (`LostAndFound_Indonesian.dll`, GUID `com.teteh.lostandfoundco.indonesian`):
 
 - **Terjemahan Bahasa Indonesia Lengkap (Ter-update hingga Patch 1.2.2)**: Mengaktifkan Slot 14 I2 Localization (`Bahasa Indonesia`) saat runtime dengan **16.718 entri** tanpa menyentuh file asli game. *(Catatan: apabila update game mendatang menambahkan level atau konten baru setelah Patch 1.2.2, teks baru tersebut belum otomatis ter-cover sampai kamus diperbarui.)*
 - **UI Co-op Otomatis Berbahasa Indonesia**: Saat Mod Bahasa Indonesia aktif di dalam game, panel kontrol `F10`, label sudut pemain, kartu tunggu P4, dan toast notifikasi otomatis tampil dalam Bahasa Indonesia dengan istilah yang konsisten (seperti `Daftar Tugas` untuk To-Do List).

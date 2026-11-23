@@ -6,6 +6,8 @@ A BepInEx 5 local split-screen co-op mod for **Lost and Found Co.** (Windows x64
 
 > **Tested Game Version**: **Lost and Found Co. Patch 1.2.2** (27 Oct 2026, Steam Build `26480281`, Unity `6000.0.84f1`, Windows x64). Minor patches typically remain compatible unless internal camera, input, or lighting classes change.
 
+![Lost and Found Co. Split-Screen Co-op Mod preview with 3 active player viewports and P4 standby slot](docs/assets/split-screen-preview.jpg)
+
 ## Features
 
 - **2 to 4 Local Players**:
@@ -25,9 +27,9 @@ A BepInEx 5 local split-screen co-op mod for **Lost and Found Co.** (Windows x64
   - Automatically follows the game's active language setting across official languages (`en`, `th`, `zh-CN`, `zh-TW`, `ja`, `ko`, `de`), **Bahasa Indonesia (`id`)** when the Indonesian Localization Mod is active, plus fallback tables for community/reserved I2 slots (`fr`, `es-ES`, `it`, `ru`, `sv-SE`, `tr`, `pt-BR`, `vi`).
   - Uses per-script Windows OS font lookup so Thai, CJK, Cyrillic, and Vietnamese text render cleanly without missing glyphs.
 
-## Other Mods by AkmalHidayat & Compatibility
+## My Other Mods & Compatibility
 
-We also built a companion localization mod for this game: **[Lost and Found Co. - Indonesian Localization Mod](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** (`LostAndFound_Indonesian.dll`, GUID `com.teteh.lostandfoundco.indonesian`):
+Check out my companion localization mod for this game: **[Lost and Found Co. - Indonesian Localization Mod](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)** (`LostAndFound_Indonesian.dll`, GUID `com.teteh.lostandfoundco.indonesian`):
 
 - **Full Bahasa Indonesia Translation (Updated Through Patch 1.2.2)**: Activates I2 Localization Slot 14 (`Bahasa Indonesia`) at runtime with **16,718 translated entries** covering UI, dialogue, items, objectives, and To-Do lists without modifying original game files. *(Note: if future game updates add new levels, events, or dialogue beyond Patch 1.2.2, newly added text is not covered until the dictionary is updated.)*
 - **Automatic Bahasa Indonesia Co-op UI**: When the Indonesian Localization Mod sets the game language to Bahasa Indonesia, the split-screen panel, badges, standby tile, and toasts automatically switch to Bahasa Indonesia using consistent terms (such as `Daftar Tugas` for the To-Do List).

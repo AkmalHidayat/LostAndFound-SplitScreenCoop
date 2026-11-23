@@ -6,6 +6,8 @@ BepInEx 5 기반의 **Lost and Found Co.** (Windows x64) 로컬 화면 분할 �
 
 > **테스트 완료 게임 버전**: **Lost and Found Co. Patch 1.2.2** (2026년 10월 27일, Steam Build `26480281`, Unity `6000.0.84f1`, Windows x64). 게임 내부의 카메라, 입력 또는 조명 클래스가 크게 변경되지 않는 한 소규모 패치에서도 보통 호환됩니다.
 
+![3인 플레이 화면 분할 뷰포트 및 P4 대기 슬롯 미리보기](assets/split-screen-preview.jpg)
+
 ## 주요 기능
 
 - **2~4인 로컬 화면 분할**:
@@ -24,9 +26,9 @@ BepInEx 5 기반의 **Lost and Found Co.** (Windows x64) 로컬 화면 분할 �
 - **게임 언어 연동 다국어 UI**:
   - 게임의 언어 설정(`en`, `th`, `zh-CN`, `zh-TW`, `ja`, `ko`, `de`, 인도네시아어 모드 설치 시 `id`, 예비 슬롯 `fr`, `es-ES`, `it`, `ru`, `sv-SE`, `tr`, `pt-BR`, `vi`)을 자동으로 따라가며 Windows 시스템 글꼴(`Malgun Gothic` 등)을 자동 선택합니다.
 
-## 함께 제작한 모드 및 호환성 안내
+## 내가 만든 다른 모드 및 호환성 안내
 
-함께 제작한 **[Lost and Found Co. 인도네시아어 로컬라이제이션 모드](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)**(`LostAndFound_Indonesian.dll` / `com.teteh.lostandfoundco.indonesian`, 총 16,718개 항목을 **Patch 1.2.2**까지 번역 지원하며 이후 추가되는 새 스테이지는 사전 업데이트 필요)와 충돌 없이 함께 동작합니다:
+직접 제작한 **[Lost and Found Co. 인도네시아어 로컬라이제이션 모드](https://github.com/AkmalHidayat/LostAndFound-IndonesianMod)**(`LostAndFound_Indonesian.dll` / `com.teteh.lostandfoundco.indonesian`, 총 16,718개 항목을 **Patch 1.2.2**까지 번역 지원하며 이후 추가되는 새 스테이지는 사전 업데이트 필요)와 충돌 없이 함께 동작합니다:
 
 - 게임 언어가 인도네시아어로 설정되면 `F10` 제어 패널, 모서리 배지, 대기 화면 및 알림이 자동으로 인도네시아어로 전환됩니다.
 - 2인 배치 전환 단축키는 `F11`만 사용하여 인도네시아어 모드의 사전 리로드 단축키(`F9`)와 겹치지 않습니다.
